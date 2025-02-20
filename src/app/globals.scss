@@ -12,9 +12,38 @@ body {
   margin: 0;
 }
 
+
+// Theme Color
+$app-primary-theme: #000000;
+$app-secondary-theme: #1f2024;
+
+ 
+
+
+// Text Colors
+$text-primary: #b8b8b8;
+$text-secondary: #e5e6e7;
+
+
+
+// General Color of App
+$white:#ffffff;
+ 
+
+// Status Label Colors
+$status-in-progress: #164158;
+$status-not-started: #6c4027;
+$status-completed:#125524;
+
+
+
+// Button and Border Colors
+$button-primary: $app-primary-theme;
+ 
  
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    
   }
 }
