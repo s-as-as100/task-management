@@ -79,8 +79,5 @@ A dark-themed task management board built using **Next.js** and **TypeScript**. 
 4. **Push** to the branch (`git push origin feature-name`).
 5. Open a **Pull Request**.
 
-## 📝 License
-This project is **open-source**. Feel free to modify and contribute!
-
----
-**Author:** *Your Name*
+ 
+**Author:** *MOhd Arif*
