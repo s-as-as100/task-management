@@ -1,15 +1,27 @@
 @import "../../assets/styles/variable.scss";
- 
 
-.primary-button {
+@mixin primary-button {
   background-color: $app-primary-theme;
-  color: $white;
-  font-size: $font-size;
+  // color: $white;
+  // font-size: $f;
   cursor: pointer;
+  padding: 1rem 1.5rem;
   transition: background-color 0.3s ease-in-out;
-  border-color: $app-tertiary-theme;
+  // border-color: $app-tertiary-theme;
 
-//   &:hover {
-//     // background-color: $primary-hover;
-//   }
+    // &:hover {
+    //   // background-color: $primary-hover;
+    // }
+}
+
+@mixin align-space-btw-element {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+@mixin align-space-btm {
+  display: flex;
+  justify-content: space-between;
 }

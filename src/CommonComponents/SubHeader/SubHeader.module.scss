@@ -1,0 +1,19 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.sub-header-container {
+    @include align-space-btm;
+    padding: 1rem 2rem;
+
+    .header-tab {
+        background: $app-secondary-theme;
+        width: 70%;
+        padding: 2rem 1.5rem;
+        border-radius: 2rem;
+        @include align-space-btw-element;
+    }
+
+    .header-tab-left-content {
+        @include align-space-btw-element;
+    }
+}

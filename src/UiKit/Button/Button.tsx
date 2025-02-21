@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Button.module.scss";
 
 type ButtonProps = {
   buttonLabel: string;
@@ -7,7 +8,7 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({ buttonLabel }) => {
   return (
     <div>
-      <button>{buttonLabel}</button>
+      <button className={styles["button"]}>{buttonLabel}</button>
     </div>
   );
 };
