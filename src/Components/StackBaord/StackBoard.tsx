@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./StackBoard.module.scss";
 import StatusBarTag from "@/UiKit/StatusBarTag/StatusBarTag";
-import { Ellipsis, Plus } from "lucide-react";
+import { Ellipsis, MessageSquare, Paperclip, Plus, User } from "lucide-react";
+import TenderCard from "../TenderCard/TenderCard";
 
 type StatusBarTagProps = {
   statusTitle: string;
@@ -29,7 +30,26 @@ const StackBoard: React.FC<StatusBarTagProps> = ({
           <Ellipsis />
         </div>
       </div>
-      <div className="stack-content">{/* {Pass Card Component} */}</div>
+      <div className="stack-content">
+        <TenderCard
+          progressIcon={<StatusBarTag color="orange" />}
+          progressName={"In Progress"}
+          statusIcon={<Ellipsis />}
+          tenderName={"Tender Name"}
+          tenderDetails={
+            "Construction of a 10 km highway with modern infrastructure"
+          }
+          assignedTo={"Abhishek"}
+          assignedIcon={<User size={"15"} />}
+          date={"2025-02-20"}
+          dateIcon={undefined}
+          noOfComments={3}
+          commentIcon={<MessageSquare size={"15"} />}
+          priority={"High"}
+          noOfFiles={6}
+          fileIcon={<Paperclip size={"15"} />}
+        />
+      </div>
     </div>
   );
 };

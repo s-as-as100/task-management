@@ -1,0 +1,83 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.card-container {
+    background: $app-primary-theme;
+    border-radius: 0.5rem;
+     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .card-header {
+        @include align-space-btw;
+    }
+
+    .progress {
+        @include align-space-btw-element;
+        gap: 0.4rem;
+        height: 0.7rem;
+        background-color: rgb(199, 184, 165);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        span {
+            font-size: 0.6rem;
+        }
+    }
+
+    .tender-name {
+        font-size: 0.9rem;
+    }
+
+    .tender-details {
+        font-size: 0.7rem;
+    }
+
+    .assigned-section {
+        @include align-space-btw;
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+
+    .date-priority-section {
+        @include align-space-btw;
+    }
+
+    .date {
+        font-size: 0.6rem;
+    }
+
+    .priority {
+        background-color: red;
+        width: 20%;
+        font-size: 0.5rem;
+        text-align: center;
+        border-radius: 0.6rem;
+    }
+
+    .footer {
+        @include align-space-btw;
+     }
+
+     .comments {
+         @include align-space-btw-element;
+         gap: 0.3rem;
+
+         span{
+            font-size: 0.7rem
+         }
+
+     }
+
+     .files {
+        @include align-space-btw-element;
+         gap: 0.3rem;
+
+         span{
+            font-size: 0.7rem
+         }
+ 
+     }
+}
