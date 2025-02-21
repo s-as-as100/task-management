@@ -1,0 +1,15 @@
+@import "../../assets/styles/variable.scss";
+ 
+
+.primary-button {
+  background-color: $app-primary-theme;
+  color: $white;
+  font-size: $font-size;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-color: $app-tertiary-theme;
+
+//   &:hover {
+//     // background-color: $primary-hover;
+//   }
+}

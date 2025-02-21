@@ -1,0 +1,6 @@
+@import "./../../assets/styles/mixin.scss";
+
+.button {
+
+    @include primary-button;
+}
