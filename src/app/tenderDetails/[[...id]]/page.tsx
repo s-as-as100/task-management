@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import styles from "./TenderDetails.module.scss";
+import styles from "./tenderDetails.module.scss";
 import { TenderCardData } from "./../../../tenderApiData";
 import {
   Calendar,
