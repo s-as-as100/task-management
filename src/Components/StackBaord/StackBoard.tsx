@@ -1,7 +1,14 @@
 import React from "react";
 import styles from "./StackBoard.module.scss";
 import StatusBarTag from "@/UiKit/StatusBarTag/StatusBarTag";
-import { Ellipsis, MessageSquare, Paperclip, Plus, User } from "lucide-react";
+import {
+  Calendar,
+  Ellipsis,
+  MessageSquare,
+  Paperclip,
+  Plus,
+  User,
+} from "lucide-react";
 import { TenderCardData } from "../../tenderApiData";
 import { groupTendersByStatus } from "@/utils";
 import TenderCard from "../TenderCard/TenderCard";
@@ -13,7 +20,9 @@ type StatusBarTagProps = {
 
 const StackBoard: React.FC<StatusBarTagProps> = () => {
   const groupedTenders = groupTendersByStatus(TenderCardData);
-  console.log(groupedTenders, "groupedTender");
+
+  console.log(groupedTenders["Completed"].length, "groupedTender");
+
   return (
     <div className={styles["stackboard-container"]}>
       {Object.entries(groupedTenders).map(([status, tenders]) => (
@@ -22,7 +31,9 @@ const StackBoard: React.FC<StatusBarTagProps> = () => {
             <div className={styles["header-left-content"]}>
               <StatusBarTag color={"pink"} />
               <h4>{status}</h4>
-              <span className={styles["total-count-status"]}>{2}</span>
+              <span className={styles["total-count-status"]}>
+                {tenders.length}
+              </span>
             </div>
             <div className={styles["header-right-content"]}>
               <Plus />
@@ -34,20 +45,18 @@ const StackBoard: React.FC<StatusBarTagProps> = () => {
               <TenderCard
                 key={index}
                 progressIcon={<StatusBarTag color="orange" />}
-                progressName={"In Progress"}
+                progressName={tender.tenderStatus}
                 statusIcon={<Ellipsis />}
-                tenderName={"Tender Name"}
-                tenderDetails={
-                  "Construction of a 10 km highway with modern infrastructure"
-                }
+                tenderName={tender.tenderName}
+                tenderDetails={tender.tenderDescription}
                 assignedTo={"Abhishek"}
                 assignedIcon={<User size={"15"} />}
-                date={"2025-02-20"}
-                dateIcon={undefined}
-                noOfComments={3}
+                date={tender.date}
+                dateIcon={<Calendar size={"15"} />}
+                noOfComments={tender.noOfComment}
                 commentIcon={<MessageSquare size={"15"} />}
-                priority={"High"}
-                noOfFiles={6}
+                priority={tender.priority}
+                noOfFiles={tender.noOfiles}
                 fileIcon={<Paperclip size={"15"} />}
               />
             ))}

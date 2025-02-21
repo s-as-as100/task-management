@@ -1,4 +1,4 @@
-import { TenderDetails } from "./types/index"; // ✅ Import the correct type
+import { TenderDetails } from "./types/index"; 
 
 export const TenderCardData: TenderDetails[] = [
   {
@@ -12,7 +12,9 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Initial phase completed, awaiting material delivery.",
     attachment: "https://example.com/docs/highway_plan.pdf",
     priority: "High",
-    tenderStatus: "In Progress"
+    tenderStatus: "In Progress",
+     noOfComment:2,
+    noOfiles:12
   },
   {
     tenderName: "School Renovation",
@@ -25,7 +27,9 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Design plans submitted for approval.",
     attachment: "https://example.com/docs/school_plan.pdf",
     priority: "Medium",
-    tenderStatus: "Not Started"
+    tenderStatus: "Not Started",
+    noOfComment:2,
+    noOfiles:12
   },
   {
     tenderName: "Bridge Maintenance",
@@ -38,7 +42,9 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Structural assessment underway.",
     attachment: "https://example.com/docs/bridge_report.pdf",
     priority: "High",
-    tenderStatus: "In Progress"
+    tenderStatus: "In Progress",
+     noOfComment:2,
+    noOfiles:12
   },
   {
     tenderName: "Hospital Construction",
@@ -51,7 +57,10 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Foundation completed, working on framework.",
     attachment: "https://example.com/docs/hospital_blueprint.pdf",
     priority: "High",
-    tenderStatus: "In Progress"
+    tenderStatus: "In Progress",
+     noOfComment:2,
+    noOfiles:12
+    
   },
   {
     tenderName: "Airport Expansion",
@@ -64,7 +73,10 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Procurement of materials finalized.",
     attachment: "https://example.com/docs/airport_plan.pdf",
     priority: "High",
-    tenderStatus: "In Progress"
+    tenderStatus: "In Progress",
+     noOfComment:2,
+    noOfiles:12
+    
   },
   {
     tenderName: "Solar Power Project",
@@ -77,7 +89,9 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Project successfully completed.",
     attachment: "https://example.com/docs/solar_report.pdf",
     priority: "Medium",
-    tenderStatus: "Completed"
+    tenderStatus: "Completed",
+     noOfComment:2,
+    noOfiles:12
   },
   {
     tenderName: "Water Supply Upgrade",
@@ -90,8 +104,99 @@ export const TenderCardData: TenderDetails[] = [
     comments: "Survey and assessment completed.",
     attachment: "https://example.com/docs/water_project.pdf",
     priority: "Low",
-    tenderStatus: "Not Started"
+    tenderStatus: "Not Started",
+     noOfComment:2,
+    noOfiles:12
+  },
+  {
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg"
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+     noOfComment:2,
+    noOfiles:12
+  },
+  {
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg"
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+     noOfComment:2,
+    noOfiles:12
+  },
+  {
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg"
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+     noOfComment:2,
+    noOfiles:12
+  },{
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg"
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+     noOfComment:2,
+    noOfiles:12
+  },{
+    tenderName: "Water Supply Upgrade",
+    tenderDescription: "Upgrading the city's water supply system.",
+    assignee: {
+      name: "William Martinez",
+      photo: "https://example.com/photos/william_martinez.jpg"
+    },
+    date: "2025-01-25",
+    comments: "Survey and assessment completed.",
+    attachment: "https://example.com/docs/water_project.pdf",
+    priority: "Low",
+    tenderStatus: "Not Started",
+     noOfComment:2,
+    noOfiles:12
+  },
+  {
+    tenderName: "Water Supply Upgrade",
+    tenderDescription: "Upgrading the city's water supply system.",
+    assignee: {
+      name: "William Martinez",
+      photo: "https://example.com/photos/william_martinez.jpg"
+    },
+    date: "2025-01-25",
+    comments: "Survey and assessment completed.",
+    attachment: "https://example.com/docs/water_project.pdf",
+    priority: "Low",
+    tenderStatus: "Not Started",
+     noOfComment:2,
+    noOfiles:12
   }
+  
 ];
 
 

@@ -2,16 +2,13 @@
 
 @mixin primary-button {
   background-color: $app-primary-theme;
-  // color: $white;
-  // font-size: $f;
   cursor: pointer;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem;
   transition: background-color 0.3s ease-in-out;
-  // border-color: $app-tertiary-theme;
-
-    // &:hover {
-    //   // background-color: $primary-hover;
-    // }
+ 
+    &:hover {
+      background-color: $app-tertiary-theme
+    }
 }
 
 @mixin align-space-btw-element {

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Tender.module.scss";
 
-// Define types for props
 interface TenderProps {
   progressIcon: React.ReactNode;
   progressName: string;
@@ -38,19 +37,14 @@ const TenderCard: React.FC<TenderProps> = ({
 }) => {
   return (
     <div className={styles["card-container"]}>
-      {/* Progress Section */}
       <div className={styles["card-header"]}>
         <div className={styles["progress"]}>
           {progressIcon} <span>{progressName}</span>
         </div>
         <div className={styles["status-icon"]}>{statusIcon}</div>
       </div>
-
-      {/* Tender Details */}
       <h3 className={styles["tender-name"]}>{tenderName}</h3>
       <p className={styles["tender-details"]}>{tenderDetails}</p>
-
-      {/* Assigned & Date Section */}
       <div className={styles["assigned-section"]}>
         <div className={styles["assigned"]}>
           <span>{assignedTo}</span>
@@ -68,14 +62,12 @@ const TenderCard: React.FC<TenderProps> = ({
         </div>
       </div>
       <hr className={styles["divider"]} />
-
-      {/* Comments & Priority Section */}
       <div className={styles["footer"]}>
         <div className={styles["comments"]}>
           {commentIcon} <span>{noOfComments} Comments</span>
         </div>
         <div className={styles["files"]}>
-          {fileIcon} <span>{noOfFiles} Comments</span>
+          {fileIcon} <span>{noOfFiles} files</span>
         </div>
       </div>
     </div>

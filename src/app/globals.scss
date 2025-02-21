@@ -19,9 +19,35 @@ body {
   font-size: #{$base-font-size};
 }
 
-// Button and Border Colors
-$button-primary: $app-primary-theme;
+ $button-primary: $app-primary-theme;
 
+ 
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: lighten($app-primary-theme, 10%);  
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $app-scroll-color;  
+  border-radius: 10px;
+ 
+  &:hover {
+    background: darken($app-scroll-color, 10%); 
+  }
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: darken($app-scroll-color, 20%);
+}
+
+ * {
+  scrollbar-width: thin;
+  scrollbar-color: $app-scroll-color lighten($app-primary-theme, 10%);
+}
 
 
  
