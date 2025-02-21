@@ -1,4 +1,6 @@
+// define your mixin function for reusablity 
 @import "../../assets/styles/variable.scss";
+
 
 @mixin primary-button {
   background-color: $app-primary-theme;

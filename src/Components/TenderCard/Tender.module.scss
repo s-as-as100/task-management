@@ -12,8 +12,8 @@
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  
-        transform: translateY(-3px); 
+        box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.2);  
+        transform: translateY(-0.1875rem); 
         background-color: lighten($app-primary-theme, 5%); 
     }
 
@@ -23,8 +23,8 @@
 
     .progress {
         @include align-space-btw-element;
-        gap: 0.4rem;
-        height: 0.7rem;
+        gap: 0.25rem;
+        height: 0.4375rem;
         background-color: rgb(199, 184, 165);
         padding: 0.5rem;
         border-radius: 0.5rem;
@@ -35,12 +35,12 @@
         }
 
         span {
-            font-size: 0.6rem;
+            font-size: 0.375rem;
         }
     }
 
     .tender-name {
-        font-size: 0.9rem;
+        font-size: 0.5625rem;
         transition: color 0.3s ease-in-out;
 
         &:hover {
@@ -49,36 +49,34 @@
     }
 
     .tender-details {
-        font-size: 0.7rem;
+        font-size: 0.4375rem;
     }
 
     .assigned-section {
         @include align-space-btw;
 
         span {
-            font-size: 0.9rem;
+            font-size: 0.5625rem;
         }
     }
 
     .date-priority-section {
         @include align-space-btw;
-        
     }
 
     .date {
-        font-size: 0.6rem;
+        font-size: 0.375rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.3rem;
-
+        gap: 0.1875rem;
     }
 
     .priority {
         background-color: red;
         width: 20%;
-        font-size: 0.5rem;
-         border-radius: 0.6rem;
+        font-size: 0.3125rem;
+        border-radius: 0.6rem;
         transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
         display: flex;
         justify-content: center;
@@ -92,20 +90,20 @@
 
     .footer {
         display: flex;
-        gap: 1rem;
+        gap: 0.625rem;
     }
 
     .comments, .files {
         @include align-space-btw-element;
-        gap: 0.3rem;
+        gap: 0.1875rem;
 
         span {
-            font-size: 0.7rem;
+            font-size: 0.4375rem;
         }
 
         &:hover {
             color: $app-secondary-theme;
-            transform: translateX(2px);  
+            transform: translateX(0.125rem);  
         }
     }
 }

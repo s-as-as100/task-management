@@ -12,6 +12,7 @@ import {
 import { TenderCardData } from "../../tenderApiData";
 import { groupTendersByStatus } from "@/utils";
 import TenderCard from "../TenderCard/TenderCard";
+
 type StatusBarTagProps = {
   statusTitle: string;
   totalCountOfStatus: number;
@@ -21,7 +22,10 @@ type StatusBarTagProps = {
 const StackBoard: React.FC<StatusBarTagProps> = () => {
   const groupedTenders = groupTendersByStatus(TenderCardData);
 
-  console.log(groupedTenders["Completed"].length, "groupedTender");
+  const statusColors: { [key: string]: string } = {
+    "In Progress": "orange",
+    "Not Started": "red",
+  };
 
   return (
     <div className={styles["stackboard-container"]}>
@@ -29,7 +33,7 @@ const StackBoard: React.FC<StatusBarTagProps> = () => {
         <div key={status} className={styles["stack-column"]}>
           <div className={styles["stack-header"]}>
             <div className={styles["header-left-content"]}>
-              <StatusBarTag color={"pink"} />
+              <StatusBarTag color={statusColors[status] || "gray"} />
               <h4>{status}</h4>
               <span className={styles["total-count-status"]}>
                 {tenders.length}
@@ -44,7 +48,9 @@ const StackBoard: React.FC<StatusBarTagProps> = () => {
             {tenders.map((tender, index) => (
               <TenderCard
                 key={index}
-                progressIcon={<StatusBarTag color="orange" />}
+                progressIcon={
+                  <StatusBarTag color={statusColors[status] || "gray"} />
+                }
                 progressName={tender.tenderStatus}
                 statusIcon={<Ellipsis />}
                 tenderName={tender.tenderName}

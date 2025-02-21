@@ -1,20 +1,13 @@
-// Define SCSS Variables
-$primary-color: #2db34e;
-$background-color: #121212;
-$input-bg: #1e1e1e;
-$text-color: #ffffff;
-$border-color: #333333;
-$icon-color: #b0b0b0;
-$focus-ring: #0091ff;
+@import "../../assets/styles/variable.scss";
 
 .search-bar {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem;  
 
   .search-icon {
     position: absolute;
-    left: 12px;
+    left: 0.75rem;  
     top: 50%;
     transform: translateY(-50%);
     color: $icon-color;
@@ -22,17 +15,17 @@ $focus-ring: #0091ff;
 
   .search-input {
     width: 100%;
-    padding: 10px 12px 10px 40px;  
+    padding: 0.625rem 0.75rem 0.625rem 2.5rem;  
     background-color: $input-bg;
     color: $text-color;
-    border: 1px solid $border-color;
-    border-radius: 8px;
+    border: 0.0625rem solid $border-color;  
+    border-radius: 0.5rem;  
     outline: none;
     transition: border 0.2s ease-in-out;
 
     &:focus {
       border-color: $focus-ring;
-      box-shadow: 0 0 5px rgba($focus-ring, 0.5);
+      box-shadow: 0 0 0.3125rem rgba($focus-ring, 0.5);  
     }
   }
 }
