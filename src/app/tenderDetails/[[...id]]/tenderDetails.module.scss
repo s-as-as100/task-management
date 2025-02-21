@@ -31,16 +31,16 @@
   font-weight: bold;
   text-transform: uppercase;
   &.high {
-    background-color: red;
-    color: white;
+    background-color: $red;
+    color: $white;
   }
   &.medium {
-    background-color: orange;
-    color: white;
+    background-color: $orange;
+    color: $white;
   }
   &.low {
-    background-color: green;
-    color: white;
+    background-color: $green;
+    color: $white;
   }
 }
 
@@ -148,6 +148,6 @@
 .not-found {
   text-align: center;
   font-size: 1.5rem;
-  color: red;
+  color: $red;
   margin-top: 2rem;
 }
