@@ -4,10 +4,17 @@
 .card-container {
     background: $app-primary-theme;
     border-radius: 0.5rem;
-     padding: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    transition: all 0.3s ease-in-out;  
+
+    &:hover {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  
+        transform: translateY(-3px); 
+        background-color: lighten($app-primary-theme, 5%); 
+    }
 
     .card-header {
         @include align-space-btw;
@@ -20,6 +27,12 @@
         background-color: rgb(199, 184, 165);
         padding: 0.5rem;
         border-radius: 0.5rem;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken(rgb(199, 184, 165), 10%);
+        }
+
         span {
             font-size: 0.6rem;
         }
@@ -27,6 +40,11 @@
 
     .tender-name {
         font-size: 0.9rem;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $app-secondary-theme;  
+        }
     }
 
     .tender-details {
@@ -55,29 +73,29 @@
         font-size: 0.5rem;
         text-align: center;
         border-radius: 0.6rem;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+        &:hover {
+            background-color: darken(red, 10%);
+            transform: scale(1.05); // Slight pop effect
+        }
     }
 
     .footer {
         @include align-space-btw;
-     }
+    }
 
-     .comments {
-         @include align-space-btw-element;
-         gap: 0.3rem;
-
-         span{
-            font-size: 0.7rem
-         }
-
-     }
-
-     .files {
+    .comments, .files {
         @include align-space-btw-element;
-         gap: 0.3rem;
+        gap: 0.3rem;
 
-         span{
-            font-size: 0.7rem
-         }
- 
-     }
+        span {
+            font-size: 0.7rem;
+        }
+
+        &:hover {
+            color: $app-secondary-theme;
+            transform: translateX(2px);  
+        }
+    }
 }

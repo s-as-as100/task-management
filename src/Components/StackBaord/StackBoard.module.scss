@@ -3,9 +3,8 @@
 
 .stackboard-container {
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr); // 3 columns
-    gap: 1rem; // Adjusts spacing between columns
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 1rem;  
     padding: 1rem;
     .stack-header {
         @include align-space-btw;
@@ -28,8 +27,7 @@
     }
 
     .stack-column {
-        // background-color: #f3f4f6; // Light gray background
-        padding: 16px;
+         padding: 16px;
         border-radius: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
