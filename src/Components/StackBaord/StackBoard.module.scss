@@ -2,11 +2,11 @@
 @import "../../assets/styles/variable.scss";
 
 .stackboard-container {
-    min-height: 60vh;
-    padding: 1rem;
-    background-color: $app-secondary-theme;
-    width: 25%;
+    display: grid;
 
+    grid-template-columns: repeat(3, 1fr); // 3 columns
+    gap: 1rem; // Adjusts spacing between columns
+    padding: 1rem;
     .stack-header {
         @include align-space-btw;
     }
@@ -24,6 +24,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+
+    .stack-column {
+        // background-color: #f3f4f6; // Light gray background
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: $app-secondary-theme;
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .tender-card-container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0 auto;
+            margin-top: 1rem;
         }
     }
 }

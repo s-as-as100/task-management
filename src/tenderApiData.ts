@@ -1,4 +1,6 @@
-export const tendersData = [
+import { TenderDetails } from "./types/index"; // ✅ Import the correct type
+
+export const TenderCardData: TenderDetails[] = [
   {
     tenderName: "Road Construction Project",
     tenderDescription: "Construction of a 10 km highway with modern infrastructure.",
@@ -92,4 +94,6 @@ export const tendersData = [
   }
 ];
 
-  
+
+
+    
