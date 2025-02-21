@@ -16,12 +16,11 @@
 
 @mixin align-space-btw-element {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 
 
-@mixin align-space-btm {
+@mixin align-space-btw {
   display: flex;
   justify-content: space-between;
 }

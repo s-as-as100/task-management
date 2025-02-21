@@ -1,0 +1,29 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.stackboard-container {
+    min-height: 60vh;
+    padding: 1rem;
+    background-color: $app-secondary-theme;
+    width: 25%;
+
+    .stack-header {
+        @include align-space-btw;
+    }
+
+    .header-left-content {
+        @include align-space-btw-element;
+        gap: 0.5rem;
+
+        .total-count-status {
+            width: 1rem;
+            border-radius: 50%;
+            height: 1rem;
+            background-color: #0a5f7b;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
