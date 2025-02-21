@@ -19,7 +19,7 @@ export interface TenderDetails {
   attachment: string;
   priority: "High" | "Medium" | "Low";
   tenderStatus: "In Progress" | "Not Started" | "Completed";
-  noOfComments: number;
-  noOfiles: number;
+  noOfComments: number | undefined;
+  noOfFiles: number;
   commentsThread?: Comment[];
 }

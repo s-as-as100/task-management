@@ -65,7 +65,7 @@ const StackBoard: React.FC = () => {
                     progressName={tender.tenderStatus}
                     statusIcon={<Ellipsis />}
                     tenderName={tender.tenderName}
-                    tenderDetails={tender.tenderDescription}
+                    tenderDescription={tender.tenderDescription}
                     assignedTo={"Abhishek"}
                     assignedIcon={<User size={"15"} />}
                     date={tender.date}
@@ -73,8 +73,8 @@ const StackBoard: React.FC = () => {
                     noOfComments={2}
                     commentIcon={<MessageSquare size={"15"} />}
                     priority={tender.priority}
-                    noOfFiles={tender.noOfiles}
                     fileIcon={<Paperclip size={"15"} />}
+                    noOfFiles={1}
                   />
                 </div>
               );

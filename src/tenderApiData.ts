@@ -15,7 +15,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "High",
     tenderStatus: "In Progress",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
     commentsThread: [
       {
         author: "John Doe",
@@ -43,7 +43,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "Medium",
     tenderStatus: "Not Started",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
     commentsThread: [
       {
         author: "Michael Johnson",
@@ -52,6 +52,30 @@ export const TenderCardData: TenderDetails[] = [
       },
     ],
    },
+   {
+    id: "tender-0021",
+    tenderName: "School Renovation",
+    tenderDescription: "Renovation of public school classrooms and facilities.",
+    assignee: {
+      name: "Jane Smith",
+      photo: "https://example.com/photos/jane_smith.jpg",
+    },
+    date: "2025-02-18",
+    comments: "Design plans submitted for approval.",
+    attachment: "https://example.com/docs/school_plan.pdf",
+    priority: "Medium",
+    tenderStatus: "Not Started",
+    noOfComments: 2,
+    noOfFiles: 12,
+    commentsThread: [
+      {
+        author: "Michael Johnson",
+        text: "Need approval from the school board.",
+        timestamp: "2025-02-17T14:00:00Z",
+      },
+    ],
+   },
+   
   {
     id: "tender-003",
     tenderName: "Bridge Maintenance",
@@ -66,7 +90,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "High",
     tenderStatus: "In Progress",
     noOfComments: 3,
-    noOfiles: 8,
+    noOfFiles: 8,
   },
   {
     id: "tender-004",
@@ -82,7 +106,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "High",
     tenderStatus: "In Progress",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
   },
   {
     id: "tender-005",
@@ -98,7 +122,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "High",
     tenderStatus: "In Progress",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
   },
   {
     id: "tender-006",
@@ -114,7 +138,7 @@ export const TenderCardData: TenderDetails[] = [
     priority: "Medium",
     tenderStatus: "Completed",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
   },
   {
     id: "tender-007",
@@ -130,6 +154,38 @@ export const TenderCardData: TenderDetails[] = [
     priority: "Low",
     tenderStatus: "Not Started",
     noOfComments: 2,
-    noOfiles: 12,
+    noOfFiles: 12,
+  },
+   {
+    id: "tender-0061",
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg",
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+    noOfComments: 2,
+    noOfFiles: 12,
+  },
+   {
+    id: "tender-069",
+    tenderName: "Solar Power Project",
+    tenderDescription: "Installation of solar panels across the city.",
+    assignee: {
+      name: "Sophia Wilson",
+      photo: "https://example.com/photos/sophia_wilson.jpg",
+    },
+    date: "2025-01-30",
+    comments: "Project successfully completed.",
+    attachment: "https://example.com/docs/solar_report.pdf",
+    priority: "Medium",
+    tenderStatus: "Completed",
+    noOfComments: 2,
+    noOfFiles: 12,
   },
 ];

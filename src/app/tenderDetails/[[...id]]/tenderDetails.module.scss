@@ -2,152 +2,146 @@
 @import "../../../assets/styles/variable.scss";
 
 .tender-details-container {
-  background: #5e5f65;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  max-width: 50rem;
-  margin: 2rem auto;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-
-   
-
+    background: #5e5f65;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
- 
-
 .tender-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  h2 {
-    font-size: 1.5rem;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .priority {
-  padding: 0.4rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  &.high {
-    background-color: $red;
-    color: $white;
-  }
-  &.medium {
-    background-color: $orange;
-    color: $white;
-  }
-  &.low {
-    background-color: $green;
-    color: $white;
-  }
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    &.high {
+        background-color: $red;
+        color: $white;
+    }
+    &.medium {
+        background-color: $orange;
+        color: $white;
+    }
+    &.low {
+        background-color: $green;
+        color: $white;
+    }
 }
 
 .assigned-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .assignee {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 
-  img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+    img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-  span {
-    font-size: 1rem;
-  }
+    span {
+        font-size: 1rem;
+    }
 }
 
 .date {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-}
-
-.tender-description {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-.attachments {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  font-size: 0.875rem;
-
-  a {
-    color: $app-secondary-theme;
-    text-decoration: none;
-    font-weight: bold;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.comments-section {
-  margin-top: 2rem;
-
-  h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .comment {
-    background: lighten($app-primary-theme, 10%);
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .comment-header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    font-weight: bold;
-  }
+}
 
-  .comment-author {
-    color: $app-tertiary-theme;
-  }
-
-  .comment-date {
-    font-size: 0.75rem;
-    color: gray;
-  }
-
-  .comment-text {
-    margin-top: 0.5rem;
+.tender-description {
+    margin-top: 1rem;
     font-size: 1rem;
-  }
+}
 
-  .no-comments {
+.attachments {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
     font-size: 0.875rem;
-    color: gray;
-  }
+
+    a {
+        color: $app-secondary-theme;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.comments-section {
+    margin-top: 2rem;
+
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .comment {
+         padding: 0.75rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .comment-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    .comment-author {
+        color: $app-tertiary-theme;
+    }
+
+    .comment-date {
+        font-size: 0.75rem;
+        color: gray;
+    }
+
+    .comment-text {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .no-comments {
+        font-size: 0.875rem;
+        color: gray;
+    }
 }
 
 .not-found {
-  text-align: center;
-  font-size: 1.5rem;
-  color: $red;
-  margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $red;
+    margin-top: 2rem;
 }

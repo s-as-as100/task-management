@@ -1,30 +1,36 @@
 import React from "react";
 import styles from "./Tender.module.scss";
+import { TenderDetails } from "@/types";
 
-interface TenderProps {
+// Define TenderCardProps based on TenderDetails
+interface TenderCardProps
+  extends Pick<
+    TenderDetails,
+    | "tenderName"
+    | "tenderDescription"
+    | "date"
+    | "priority"
+    | "noOfComments"
+    | "noOfFiles"
+  > {
   progressIcon: React.ReactNode;
   progressName: string;
   statusIcon: React.ReactNode;
-  tenderName: string;
-  tenderDetails: string;
   assignedTo: string;
   assignedIcon: React.ReactNode;
-  date: string;
   dateIcon: React.ReactNode;
   commentIcon: React.ReactNode;
-  priority: "High" | "Medium" | "Low";
-  noOfFiles: number;
   fileIcon: React.ReactNode;
-  noOfComments: number;
+  noOfFiles: number;
 }
 
 // Reusable TenderCard component
-const TenderCard: React.FC<TenderProps> = ({
+const TenderCard: React.FC<TenderCardProps> = ({
   progressIcon,
   progressName,
   statusIcon,
   tenderName,
-  tenderDetails,
+  tenderDescription,
   assignedTo,
   assignedIcon,
   date,
@@ -44,7 +50,7 @@ const TenderCard: React.FC<TenderProps> = ({
         <div className={styles["status-icon"]}>{statusIcon}</div>
       </div>
       <h3 className={styles["tender-name"]}>{tenderName}</h3>
-      <p className={styles["tender-details"]}>{tenderDetails}</p>
+      <p className={styles["tender-details"]}>{tenderDescription}</p>
       <div className={styles["assigned-section"]}>
         <div className={styles["assigned"]}>
           <span>{assignedTo}</span>
