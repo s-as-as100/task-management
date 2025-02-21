@@ -1,204 +1,135 @@
-import { TenderDetails } from "./types/index"; 
+import { TenderDetails } from "./types/index";
 
 export const TenderCardData: TenderDetails[] = [
   {
+    id: "tender-001",
     tenderName: "Road Construction Project",
     tenderDescription: "Construction of a 10 km highway with modern infrastructure.",
     assignee: {
       name: "John Doe",
-      photo: "https://example.com/photos/john_doe.jpg"
+      photo: "https://example.com/photos/john_doe.jpg",
     },
     date: "2025-02-20",
     comments: "Initial phase completed, awaiting material delivery.",
     attachment: "https://example.com/docs/highway_plan.pdf",
     priority: "High",
     tenderStatus: "In Progress",
-     noOfComment:2,
-    noOfiles:12
-  },
+    noOfComments: 2,
+    noOfiles: 12,
+    commentsThread: [
+      {
+        author: "John Doe",
+        text: "We are waiting for material delivery.",
+        timestamp: "2025-02-18T10:30:00Z",
+      },
+      {
+        author: "Jane Smith",
+        text: "Delivery is expected by next week.",
+        timestamp: "2025-02-19T08:15:00Z",
+      },
+    ],
+   },
   {
+    id: "tender-002",
     tenderName: "School Renovation",
     tenderDescription: "Renovation of public school classrooms and facilities.",
     assignee: {
       name: "Jane Smith",
-      photo: "https://example.com/photos/jane_smith.jpg"
+      photo: "https://example.com/photos/jane_smith.jpg",
     },
     date: "2025-02-18",
     comments: "Design plans submitted for approval.",
     attachment: "https://example.com/docs/school_plan.pdf",
     priority: "Medium",
     tenderStatus: "Not Started",
-    noOfComment:2,
-    noOfiles:12
-  },
+    noOfComments: 2,
+    noOfiles: 12,
+    commentsThread: [
+      {
+        author: "Michael Johnson",
+        text: "Need approval from the school board.",
+        timestamp: "2025-02-17T14:00:00Z",
+      },
+    ],
+   },
   {
+    id: "tender-003",
     tenderName: "Bridge Maintenance",
     tenderDescription: "Routine maintenance of the city's main bridge.",
     assignee: {
       name: "Michael Johnson",
-      photo: "https://example.com/photos/michael_johnson.jpg"
+      photo: "https://example.com/photos/michael_johnson.jpg",
     },
     date: "2025-02-15",
     comments: "Structural assessment underway.",
     attachment: "https://example.com/docs/bridge_report.pdf",
     priority: "High",
     tenderStatus: "In Progress",
-     noOfComment:2,
-    noOfiles:12
+    noOfComments: 3,
+    noOfiles: 8,
   },
   {
+    id: "tender-004",
     tenderName: "Hospital Construction",
     tenderDescription: "Building a new hospital in the central district.",
     assignee: {
       name: "Emily Davis",
-      photo: "https://example.com/photos/emily_davis.jpg"
+      photo: "https://example.com/photos/emily_davis.jpg",
     },
     date: "2025-02-10",
     comments: "Foundation completed, working on framework.",
     attachment: "https://example.com/docs/hospital_blueprint.pdf",
     priority: "High",
     tenderStatus: "In Progress",
-     noOfComment:2,
-    noOfiles:12
-    
+    noOfComments: 2,
+    noOfiles: 12,
   },
   {
+    id: "tender-005",
     tenderName: "Airport Expansion",
     tenderDescription: "Expanding the city's international airport with new terminals.",
     assignee: {
       name: "Robert Brown",
-      photo: "https://example.com/photos/robert_brown.jpg"
+      photo: "https://example.com/photos/robert_brown.jpg",
     },
     date: "2025-02-05",
     comments: "Procurement of materials finalized.",
     attachment: "https://example.com/docs/airport_plan.pdf",
     priority: "High",
     tenderStatus: "In Progress",
-     noOfComment:2,
-    noOfiles:12
-    
+    noOfComments: 2,
+    noOfiles: 12,
   },
   {
+    id: "tender-006",
     tenderName: "Solar Power Project",
     tenderDescription: "Installation of solar panels across the city.",
     assignee: {
       name: "Sophia Wilson",
-      photo: "https://example.com/photos/sophia_wilson.jpg"
+      photo: "https://example.com/photos/sophia_wilson.jpg",
     },
     date: "2025-01-30",
     comments: "Project successfully completed.",
     attachment: "https://example.com/docs/solar_report.pdf",
     priority: "Medium",
     tenderStatus: "Completed",
-     noOfComment:2,
-    noOfiles:12
+    noOfComments: 2,
+    noOfiles: 12,
   },
   {
+    id: "tender-007",
     tenderName: "Water Supply Upgrade",
     tenderDescription: "Upgrading the city's water supply system.",
     assignee: {
       name: "William Martinez",
-      photo: "https://example.com/photos/william_martinez.jpg"
+      photo: "https://example.com/photos/william_martinez.jpg",
     },
     date: "2025-01-25",
     comments: "Survey and assessment completed.",
     attachment: "https://example.com/docs/water_project.pdf",
     priority: "Low",
     tenderStatus: "Not Started",
-     noOfComment:2,
-    noOfiles:12
+    noOfComments: 2,
+    noOfiles: 12,
   },
-  {
-    tenderName: "Solar Power Project",
-    tenderDescription: "Installation of solar panels across the city.",
-    assignee: {
-      name: "Sophia Wilson",
-      photo: "https://example.com/photos/sophia_wilson.jpg"
-    },
-    date: "2025-01-30",
-    comments: "Project successfully completed.",
-    attachment: "https://example.com/docs/solar_report.pdf",
-    priority: "Medium",
-    tenderStatus: "Completed",
-     noOfComment:2,
-    noOfiles:12
-  },
-  {
-    tenderName: "Solar Power Project",
-    tenderDescription: "Installation of solar panels across the city.",
-    assignee: {
-      name: "Sophia Wilson",
-      photo: "https://example.com/photos/sophia_wilson.jpg"
-    },
-    date: "2025-01-30",
-    comments: "Project successfully completed.",
-    attachment: "https://example.com/docs/solar_report.pdf",
-    priority: "Medium",
-    tenderStatus: "Completed",
-     noOfComment:2,
-    noOfiles:12
-  },
-  {
-    tenderName: "Solar Power Project",
-    tenderDescription: "Installation of solar panels across the city.",
-    assignee: {
-      name: "Sophia Wilson",
-      photo: "https://example.com/photos/sophia_wilson.jpg"
-    },
-    date: "2025-01-30",
-    comments: "Project successfully completed.",
-    attachment: "https://example.com/docs/solar_report.pdf",
-    priority: "Medium",
-    tenderStatus: "Completed",
-     noOfComment:2,
-    noOfiles:12
-  },{
-    tenderName: "Solar Power Project",
-    tenderDescription: "Installation of solar panels across the city.",
-    assignee: {
-      name: "Sophia Wilson",
-      photo: "https://example.com/photos/sophia_wilson.jpg"
-    },
-    date: "2025-01-30",
-    comments: "Project successfully completed.",
-    attachment: "https://example.com/docs/solar_report.pdf",
-    priority: "Medium",
-    tenderStatus: "Completed",
-     noOfComment:2,
-    noOfiles:12
-  },{
-    tenderName: "Water Supply Upgrade",
-    tenderDescription: "Upgrading the city's water supply system.",
-    assignee: {
-      name: "William Martinez",
-      photo: "https://example.com/photos/william_martinez.jpg"
-    },
-    date: "2025-01-25",
-    comments: "Survey and assessment completed.",
-    attachment: "https://example.com/docs/water_project.pdf",
-    priority: "Low",
-    tenderStatus: "Not Started",
-     noOfComment:2,
-    noOfiles:12
-  },
-  {
-    tenderName: "Water Supply Upgrade",
-    tenderDescription: "Upgrading the city's water supply system.",
-    assignee: {
-      name: "William Martinez",
-      photo: "https://example.com/photos/william_martinez.jpg"
-    },
-    date: "2025-01-25",
-    comments: "Survey and assessment completed.",
-    attachment: "https://example.com/docs/water_project.pdf",
-    priority: "Low",
-    tenderStatus: "Not Started",
-     noOfComment:2,
-    noOfiles:12
-  }
-  
 ];
-
-
-
-    

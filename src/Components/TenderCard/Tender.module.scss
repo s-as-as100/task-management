@@ -35,12 +35,12 @@
         }
 
         span {
-            font-size: 0.375rem;
+            font-size: 0.5rem;
         }
     }
 
     .tender-name {
-        font-size: 0.5625rem;
+        font-size: 1rem;
         transition: color 0.3s ease-in-out;
 
         &:hover {
@@ -49,14 +49,14 @@
     }
 
     .tender-details {
-        font-size: 0.4375rem;
+        font-size: 0.8em;
     }
 
     .assigned-section {
         @include align-space-btw;
 
         span {
-            font-size: 0.5625rem;
+            font-size: 0.7rem;
         }
     }
 
@@ -65,7 +65,7 @@
     }
 
     .date {
-        font-size: 0.375rem;
+        font-size: 0.7rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,7 +75,7 @@
     .priority {
         background-color: red;
         width: 20%;
-        font-size: 0.3125rem;
+        font-size: 0.5rem;
         border-radius: 0.6rem;
         transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
         display: flex;
@@ -98,7 +98,7 @@
         gap: 0.1875rem;
 
         span {
-            font-size: 0.4375rem;
+            font-size: 0.8rem;
         }
 
         &:hover {

@@ -17,11 +17,7 @@ const Dashboard: React.FC = () => {
       </div>
 
       <div className={styles["dashboard-content"]}>
-        <StackBoard
-          statusColor="orange"
-          statusTitle="In Progress"
-          totalCountOfStatus={2}
-        />
+        <StackBoard />
       </div>
     </div>
   );

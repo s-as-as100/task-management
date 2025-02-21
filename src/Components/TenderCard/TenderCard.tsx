@@ -11,11 +11,11 @@ interface TenderProps {
   assignedIcon: React.ReactNode;
   date: string;
   dateIcon: React.ReactNode;
-  noOfComments: number;
   commentIcon: React.ReactNode;
   priority: "High" | "Medium" | "Low";
   noOfFiles: number;
   fileIcon: React.ReactNode;
+  noOfComments: number;
 }
 
 // Reusable TenderCard component
@@ -29,11 +29,11 @@ const TenderCard: React.FC<TenderProps> = ({
   assignedIcon,
   date,
   dateIcon,
-  noOfComments,
   commentIcon,
   noOfFiles,
   fileIcon,
   priority,
+  noOfComments,
 }) => {
   return (
     <div className={styles["card-container"]}>
