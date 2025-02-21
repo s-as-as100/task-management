@@ -3,7 +3,7 @@
 A dark-themed task management board built using **Next.js** and **TypeScript**. Tasks are displayed in different columns based on their status (e.g., Not Started, In Progress, Completed). The project follows an incremental development approach with frequent commits and meaningful messages.
 
 ## 🚀 Live Demo
-[Hosted on Vercel/Netlify](#) *(Replace with actual deployed link)*
+[https://whimsical-smakager-a7be25.netlify.app/](#)  
 
 ## 📌 Features
 ### Level 1: Core UI
